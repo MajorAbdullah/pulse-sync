@@ -33,7 +33,7 @@ export function Topbar({
         {/* AI helper hint */}
         <button className="hidden xl:flex items-center gap-1.5 px-2 h-8 text-xs text-ink-3 hover:text-ink transition-colors">
           <Sparkles className="size-3.5" strokeWidth={1.75} />
-          <span>Ask PulseIQ</span>
+          <span>Ask PulseSync</span>
         </button>
 
         {trailing}

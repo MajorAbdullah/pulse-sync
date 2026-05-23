@@ -77,7 +77,7 @@ export default function SurveysPage() {
             <span className="italic">We do the rest.</span>
           </h2>
           <p className="text-sm text-ink-2 max-w-2xl">
-            Drop a CSV. PulseIQ matches respondents to existing customers, runs
+            Drop a CSV. PulseSync matches respondents to existing customers, runs
             sentiment + theme analysis on free-text responses, and feeds the
             Pulse Score for each affected account.
           </p>

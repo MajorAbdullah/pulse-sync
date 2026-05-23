@@ -1,8 +1,8 @@
-# PulseIQ
+# PulseSync
 
 > AI-powered customer pulse, sentiment, and churn-risk monitoring across Slack, Zendesk, and surveys.
 
-PulseIQ continuously reads customer interactions across every channel, runs
+PulseSync continuously reads customer interactions across every channel, runs
 LLM sentiment / emotion / urgency analysis on each one, computes a unified
 **Pulse Score** per account, detects churn-risk signals via a rule engine,
 and pushes proactive alerts with AI-generated next-action recommendations
@@ -92,7 +92,7 @@ pulseiq/
 
 ## Design
 
-PulseIQ uses an editorial intelligence-terminal aesthetic — refined, dense,
+PulseSync uses an editorial intelligence-terminal aesthetic — refined, dense,
 not the typical AI-app look. Warm cream paper background, ink with a warm
 undertone, sage / rust / brick semantic palette, hairline 1px borders
 instead of shadows. Typography: Fraunces (display serif), Manrope (body),

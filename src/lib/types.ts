@@ -1,4 +1,4 @@
-// PulseIQ — domain types for the prototype. Mirrors PRD §3 data model so
+// PulseSync — domain types for the prototype. Mirrors PRD §3 data model so
 // these types will survive the move to a real backend.
 
 export type RiskLevel = "low" | "medium" | "high";

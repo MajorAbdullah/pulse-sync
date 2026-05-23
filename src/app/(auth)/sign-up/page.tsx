@@ -31,7 +31,7 @@ export default function SignUpPage() {
           Start reading your customer <span className="italic text-rust">signal</span>.
         </h1>
         <p className="text-sm text-ink-3 max-w-sm">
-          PulseIQ is in private pilot. Get added to your team's workspace —
+          PulseSync is in private pilot. Get added to your team's workspace —
           takes under a minute.
         </p>
       </header>

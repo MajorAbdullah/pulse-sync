@@ -1,9 +1,9 @@
-# PulseIQ — Swimlane Diagram (AS-IS & TO-BE)
+# PulseSync — Swimlane Diagram (AS-IS & TO-BE)
 
-> **Project:** PulseIQ – AI-Powered Customer Pulse Platform
+> **Project:** PulseSync – AI-Powered Customer Pulse Platform
 > **Generated:** 2026-05-20
 > **Purpose:** Compare the current manual customer-sentiment process (AS-IS)
-> against the PulseIQ-enabled process (TO-BE).
+> against the PulseSync-enabled process (TO-BE).
 
 ---
 
@@ -75,9 +75,9 @@ flowchart TD
 
 ---
 
-## 2. TO-BE Process — With PulseIQ
+## 2. TO-BE Process — With PulseSync
 
-PulseIQ continuously ingests interactions from every channel, runs AI sentiment
+PulseSync continuously ingests interactions from every channel, runs AI sentiment
 analysis, computes a unified **Customer Pulse Score**, detects churn risk, and
 pushes **proactive alerts and recommendations** to the CSM in real time.
 
@@ -86,7 +86,7 @@ pushes **proactive alerts and recommendations** to the CSM in real time.
 1. The customer interacts normally across channels — no behavior change needed.
 2. **Source systems** (Slack, Zendesk, Gmail/Outlook, Zoom/Meet, Surveys, CRM)
    record those interactions.
-3. The **PulseIQ Connector Layer** polls each source on a schedule (or receives
+3. The **PulseSync Connector Layer** polls each source on a schedule (or receives
    webhooks) and normalizes everything into a common interaction format.
 4. The **AI Pipeline** embeds, analyzes sentiment/emotion/urgency, computes the
    Pulse Score, and runs churn-risk detection.
@@ -109,13 +109,13 @@ flowchart TD
         S2[Interaction recorded in source tool]
     end
 
-    subgraph CONN[Lane: PulseIQ Connector Layer]
+    subgraph CONN[Lane: PulseSync Connector Layer]
         N1[Poll APIs on schedule or receive webhook]
         N2[Normalize to common interaction format]
         N3[Enqueue ingestion job]
     end
 
-    subgraph AIP[Lane: PulseIQ AI Pipeline]
+    subgraph AIP[Lane: PulseSync AI Pipeline]
         P1[Embed text into pgvector]
         P2[Analyze sentiment, emotion, urgency, intent]
         P3[Compute Customer Pulse Score]
@@ -160,7 +160,7 @@ flowchart TD
 
 | Dimension | AS-IS | TO-BE |
 |-----------|-------|-------|
-| Data location | 6+ disconnected tools | Centralized PulseIQ DB |
+| Data location | 6+ disconnected tools | Centralized PulseSync DB |
 | Sentiment method | Manual, subjective | AI-scored, consistent |
 | Monitoring cadence | Occasional, manual | Continuous, automated |
 | Churn detection | After the fact | Proactive, predictive signals |

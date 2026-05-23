@@ -22,7 +22,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PulseIQ — Customer Pulse Intelligence",
+  title: "PulseSync — Customer Pulse Intelligence",
   description:
     "Continuous AI-powered customer pulse, sentiment, and churn-risk monitoring across every channel.",
 };

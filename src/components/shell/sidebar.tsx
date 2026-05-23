@@ -31,7 +31,7 @@ export function Sidebar() {
       <div className="px-4 pt-5 pb-3">
         <Link href="/dashboard" className="flex items-baseline gap-1.5">
           <span className="display-tight text-[22px] text-ink">
-            Pulse<span className="text-rust">·</span>IQ
+            Pulse<span className="text-rust">·</span>Sync
           </span>
           <span className="kicker !text-[8.5px] !tracking-[0.18em]">v0.1 · prototype</span>
         </Link>

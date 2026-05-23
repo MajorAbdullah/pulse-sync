@@ -27,7 +27,7 @@ export default function AuthLayout({
 
         <Link href="/" className="relative z-10 flex items-baseline gap-2">
           <span className="display-tight text-3xl">
-            Pulse<span className="text-rust">·</span>IQ
+            Pulse<span className="text-rust">·</span>Sync
           </span>
           <span className="kicker !text-paper/60 !text-[9.5px]">v0.1 · prototype</span>
         </Link>
@@ -42,7 +42,7 @@ export default function AuthLayout({
             </span>
           </h2>
           <p className="text-paper/70 text-[15px] leading-relaxed max-w-sm">
-            PulseIQ continuously reads your customer interactions across Slack,
+            PulseSync continuously reads your customer interactions across Slack,
             Zendesk, and surveys — and turns thousands of signals into a single
             score per account.
           </p>

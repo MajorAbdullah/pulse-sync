@@ -1,6 +1,6 @@
-# PulseIQ — Product Requirements Document (PRD)
+# PulseSync — Product Requirements Document (PRD)
 
-> **Product:** PulseIQ – AI-Powered Customer Pulse Platform
+> **Product:** PulseSync – AI-Powered Customer Pulse Platform
 > **Version:** 1.0 (MVP)
 > **Generated:** 2026-05-20
 > **Status:** Approved for MVP build
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-PulseIQ is an AI-powered platform that continuously analyzes customer
+PulseSync is an AI-powered platform that continuously analyzes customer
 interactions across multiple channels to measure **customer sentiment**,
 **customer health**, and **churn risk** in real time.
 
@@ -210,7 +210,7 @@ interface for later.
 4. The dashboard shows each customer's Pulse Score and trend.
 5. A sustained negative trend is detected for one customer.
 6. An alert is triggered automatically with a churn-risk level.
-7. PulseIQ shows an AI-generated recommended next action.
+7. PulseSync shows an AI-generated recommended next action.
 
 ---
 

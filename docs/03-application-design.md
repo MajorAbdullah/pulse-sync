@@ -1,6 +1,6 @@
-# PulseIQ — Application Design
+# PulseSync — Application Design
 
-> **Product:** PulseIQ – AI-Powered Customer Pulse Platform
+> **Product:** PulseSync – AI-Powered Customer Pulse Platform
 > **Version:** 1.0 (MVP)
 > **Generated:** 2026-05-20
 > **Companion docs:** `01-swimlane-diagram.md`, `02-PRD.md`
@@ -9,7 +9,7 @@
 
 ## 1. Architecture Overview
 
-PulseIQ is a single Next.js full-stack application plus a background worker,
+PulseSync is a single Next.js full-stack application plus a background worker,
 backed by PostgreSQL (with pgvector), Redis, and MinIO. All services run
 locally via Docker Compose. LLM calls route through **OpenRouter**.
 
@@ -23,7 +23,7 @@ flowchart TB
         SURV[Survey CSV / API]
     end
 
-    subgraph APP[PulseIQ Application]
+    subgraph APP[PulseSync Application]
         WEB[Next.js Web + API<br/>App Router]
         WORKER[Node.js Worker<br/>BullMQ consumers]
         CONN[Connector Layer<br/>poll + normalize]

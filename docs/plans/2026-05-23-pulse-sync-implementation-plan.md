@@ -1,4 +1,4 @@
-# PulseIQ — Implementation Plan (Phases + Waves)
+# PulseSync — Implementation Plan (Phases + Waves)
 
 > **Generated:** 2026-05-23
 > **Status:** Draft (awaiting approval)
@@ -10,7 +10,7 @@
 
 ## 1. Project Overview
 
-**Goal:** Build the PulseIQ MVP — an AI-powered customer pulse platform that
+**Goal:** Build the PulseSync MVP — an AI-powered customer pulse platform that
 ingests interactions from Slack, Zendesk, and Surveys (CSV), runs LLM
 sentiment/emotion/urgency analysis, computes a unified Pulse Score per
 customer, detects churn risk via rule engine, and pushes alerts with
@@ -35,7 +35,7 @@ AI-generated recommendations to CSMs.
 Searched the OSS landscape; no fork-and-rebrand candidate exists. Closest
 neighbours and how they relate:
 
-| Project | Relation to PulseIQ |
+| Project | Relation to PulseSync |
 |---|---|
 | **Chatwoot** (MIT, ~29k★) | Best omnichannel inbox OSS. Different stack (Rails). Patterns worth referencing for Slack/Zendesk integration shape; not a code donor. |
 | **Erxes** (AGPL) | "Experience OS" with plugin model. Heavyweight; analytics layer is weak. |
@@ -85,7 +85,7 @@ flowchart LR
         COMP[Composio Cloud<br/>Slack + Zendesk]
         OR[OpenRouter]
     end
-    subgraph APP[PulseIQ]
+    subgraph APP[PulseSync]
         WEB[Next.js Web + API]
         WORK[Node Worker<br/>BullMQ consumers]
     end
