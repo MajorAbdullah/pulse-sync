@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ─────────────────────────────────────────────────────────────────────────
+   PulseIQ — Editorial Intelligence Terminal
+   Warm cream paper · ink · sage / rust / brick semantics
+   ───────────────────────────────────────────────────────────────────────── */
+
+@theme {
+  /* Surfaces */
+  --color-paper: #faf7f2;
+  --color-paper-2: #f2ede4;
+  --color-paper-3: #ebe4d6;
+  --color-card: #ffffff;
+
+  /* Ink */
+  --color-ink: #1a1714;
+  --color-ink-2: #3d3833;
+  --color-ink-3: #78716c;
+  --color-ink-4: #a8a29e;
+  --color-ink-5: #d6cfc2;
+
+  /* Hairline rules */
+  --color-rule: #e5dfd4;
+  --color-rule-strong: #c9c0af;
+
+  /* Semantic — healthy */
+  --color-sage: #6b8068;
+  --color-sage-strong: #4a5d48;
+  --color-sage-tint: #e8ede5;
+  --color-sage-deep: #2d3f2c;
+
+  /* Semantic — at-risk */
+  --color-rust: #b8623a;
+  --color-rust-strong: #9c4f2d;
+  --color-rust-tint: #f5e4d9;
+  --color-rust-deep: #5e2c14;
+
+  /* Semantic — critical */
+  --color-brick: #8c2a1f;
+  --color-brick-strong: #6e1f16;
+  --color-brick-tint: #f0dad6;
+  --color-brick-deep: #471109;
+
+  /* Neutral data accent */
+  --color-slate: #475569;
+  --color-slate-tint: #e2e8f0;
+
+  /* Fonts — set via next/font in layout.tsx */
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-jetbrains);
+
+  /* Radii — kept tight; this is a terminal, not a marshmallow */
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+
+  /* Type ramp */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.875rem;
+  --text-md: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --text-6xl: 5rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.005em;
+}
+
+.num,
+.tabular {
+  font-feature-settings: "tnum", "lnum";
+}
+
+.display-num {
+  font-family: var(--font-display);
+  font-feature-settings: "ss01", "tnum", "lnum";
+  font-variation-settings: "opsz" 144, "SOFT" 50, "WONK" 0;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 96, "SOFT" 30, "WONK" 0;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.display-tight {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 144, "SOFT" 20, "WONK" 0;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.kicker {
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum", "lnum", "zero";
+  font-size: 12px;
+  letter-spacing: -0.01em;
+}
+
+.hairline {
+  background: var(--color-rule);
+}
+
+*:focus-visible {
+  outline: 1.5px solid var(--color-ink);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-5) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-ink-5);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-4);
+  background-clip: content-box;
+  border: 3px solid transparent;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in { animation: fade-in 0.6s ease both; }
+
+.spark-path {
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* Table niceties */
+.table-row-hover:hover {
+  background: var(--color-paper-2);
+}
